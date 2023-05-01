@@ -1,10 +1,17 @@
 ---
-title: Home Page
+title: Stack Overflow Analysis
 layout: single
 next: data-description
 ---
+Stack Overflow is a helpful platform where experienced programmers, developers, experts and etc. come to share their knowledge to the less experienced users. These users are able to ask any questions related to programming and other people can answer these questions.
+The questions and answers are then stored on the website as valuable data. 
 
-Hejsa!!!!!!!!!!!!!!!!!!!!!!!
+This makes the data on Stack Overflow very interesting to analyse social interactions & subcommunities on and we might be able to obtain insights into different kind of programming patterns.
+
+
+
+
+
 ## Math formula
 
 
@@ -17,7 +24,7 @@ import pandas as pd
 
 df = pd.DataFrame()
 ```
-
+Waddup homies
 Sed id orci ullamcorper, commodo sapien in, scelerisque nunc. Duis posuere sed nisl in gravida. Pellentesque rutrum justo ut mi tempus dignissim. Ut pulvinar quis urna ut molestie. Pellentesque nec arcu metus. Vivamus non rutrum magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 ![](https://source.unsplash.com/random/?Copenhagen)
