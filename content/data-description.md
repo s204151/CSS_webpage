@@ -13,6 +13,17 @@ The dataset is downloaded and 3 csv files is received:
 * (FIND EN MÅDE AT DOWNLOADE DATASETTET)
 * (FIND EN MÅDE AT DOWNLOADE DATASETTET)
 
+There is only need for the Question and Answer file for this project.
+
+The first dataset Question.csv is made of 1.249.762 rows x 7 columns. Each row represents a record of the question while each column represents a field name to the question. The field names are Id, OwnerUserId, CreationDate, ClosedDate, Score, Title, Body. An example is shown in the picture below:
+
+<img src="/images/Question.png" width="600" />
+
+The other dataset Answer.csv is made of 2.001.316 rows x 6 columns. It is structured the same way as the Question.csv, but there is only 6 field names. The field names are Id, OwnerUserId, CreationDate, ParentId, Score, Body. An example is shown in the picture below:
+
+<img src="/images/Answer.png" width="600" />
+
+The datasets are made into subsets
 
 
 
