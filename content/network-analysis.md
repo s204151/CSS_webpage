@@ -13,9 +13,11 @@ In the image, it is shown that 1079 communities has been created where each repr
 Looking closer at the modularity, it is calculated as 0.25. The Wald 95% CI for the expected modularity in a sampled community is 0.25 +- 0.0036. Therefore a non-parametric boostrap with N = 1000 is calculated and a 95% CI found using quantiles 2.5% and 97.5% quantiles: [0.153, 0.389]
 
 <img src="/images/Bootstrap.png"/>
+
 * Since our 95% non-parametric bootstrapped confidence interval is [0.153, 0.389], which is both positive but not very high. Statistically, we can assess that underlying distribution of the sampled the social network is not tightly knit, nor very sparse as both numbers are not very high and both are not negative.
 * Modularity is significantly different from 0. 
 * Does not contain 0 in confidence interval
+
 
 (ADD MORE INFO HELP)
 
