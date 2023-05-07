@@ -17,20 +17,3 @@ To see the code used in this project, it can be accessed through the Jupyter Not
 ## [Explainer Notebook](explainer-notebook.html)
 
 The dataset used can also be downloaded in the data section of this website.
-
-(Har beholdt de her ting som eksempel, slettes til sidst:)
-
-## Code chunk
-
-```
-import pandas as pd
-
-df = pd.DataFrame()
-```
-
-
-| Column 1  | Column 2  |  Column 3 |
-|---|---|---|
-| 1 | 4 | 7 |
-| 2 | 5 | 8 |
-| 3 | 6 | 9 |
