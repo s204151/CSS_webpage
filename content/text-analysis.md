@@ -26,7 +26,7 @@ We then tried comparing our results when weighting question titles higher than w
 Where we let alpha = 3, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$. It is also noted that TF and IDF is calculated community-wise, not document-wise, as we are interested in finding largest differences in communities.
 
 
-Sadly, while the code was written and results ready for comparing with alpha = 1 and \alpha = 3, we ran out of time - there were some code issues and calculating IDF on a large corpus took quite a long time. Making bi-gram wordclouds for semi-contextual terms to compare with, we also did not.
+Sadly, while the code was written and results ready for comparing with alpha = 1 and alpha = 3, we ran out of time - there were some code issues and calculating IDF on a large corpus took quite a long time. Making bi-gram wordclouds for semi-contextual terms to compare with, we also did not.
 
 
 The top wordcloud (based on question and answers in 2009) contains java, argueably the most popular programming language in the past decades and div, a HTML tag,
