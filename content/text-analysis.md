@@ -29,4 +29,10 @@ $$
 Where we let $\alpha = 3$, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$. It is also noted that TF and IDF is calculated community-wise, not document-wise, as we are interested in finding largest differences in communities.
 
 
+Sadly, while the code was written and results ready for comparing with $\alpha = 3$ and $\alpha = 3$, we ran out of time - there were some code issues and calculating IDF on a large corpus took quite a long time.
+
+
+The top wordcloud contains java, argueably the most popular programming language in the past decades,
+
+<img src="/images/wordcloud_top1.png" width="600" />
 
