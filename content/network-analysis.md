@@ -18,9 +18,6 @@ Looking closer at the modularity, it is calculated as 0.25. The Wald 95% CI for 
 * Modularity is significantly different from 0. 
 * Does not contain 0 in confidence interval
 
-
-(ADD MORE INFO HELP)
-
 The degree distribution shows how many nodes have a particular degree. The highest degree in this network is 775, but a cutoff point of 30 has been chosen for the plot because of the sparsity of degrees above this point(Very few nodes have more than 30 edges). The degree distribution is visualized below:
 
 <img src="/images/Degree.png"/>
