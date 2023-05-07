@@ -2,11 +2,27 @@
 title: Text analysis
 prev: network-analysis
 ---
+Throughout the dataset, question body text, question title text and answer body text is tokenized and stopwords are removed. Bi-grams are also found for semi-contextual visualization of discussed topics in different communities using WordClouds.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.
 
-> Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
+To measure importance of terms, TF-IDF is used. The (non-normalized) Term Frequency is used,
 
-Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.
+$$ \text{TF}(t,d) = f_{t,d} $$
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.
+Where f_{t,d} is simply the term count in document. The Inverse Document Frequency is calculated as 
+
+ $$ \text{IDF}(t,D) = log(\\frac{N}{1 + n_t}) + 1 $$
+
+where $n_t = |{d \\in D: t \\in d}|$ is the number of documents $D$ where the term $t$ appears at least once. N is total number of documents in corpus. The logbase used is in our case log10.
+
+We then tried comparing our results when weighting question titles higher than when calculated using TF-IDF, since a notion we had was that good question titles might contextualize the problem quite well but not be weighted very high when using the ordinary TF-IDF since question titles are short compared to body text. Thus we compare our results when using modified/reweighted TF-IDF,
+
+$$ 
+\text{TF-IDF}_{\text{modified}}(t,d,\alpha) = 
+\begin{cases}
+        \text{TF-IDF}(t,d) \cdot \alpha &  \textbf{if} \ \   t \in Q_{\text{title}} \\
+        \text{TF-IDF}(t,d) & \textbf{else}
+\end{cases}
+$$
+Where we let $\alpha = 3$, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$.
+
