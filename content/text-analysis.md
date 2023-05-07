@@ -2,6 +2,8 @@
 title: Text analysis
 prev: network-analysis
 ---
+
+
 Throughout the dataset, question body text, question title text and answer body text is tokenized and stopwords are removed. Bi-grams are also found for semi-contextual visualization of discussed topics in different communities using WordClouds.
 
 
@@ -24,5 +26,7 @@ $$
         \text{TF-IDF}(t,d) & \textbf{else}
 \end{cases}
 $$
-Where we let $\alpha = 3$, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$.
+Where we let $\alpha = 3$, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$. It is also noted that TF and IDF is calculated community-wise, not document-wise, as we are interested in finding largest differences in communities.
+
+
 
