@@ -19,7 +19,7 @@ Looking closer at the modularity, it is calculated as 0.25. The Wald 95% CI for 
 
 (ADD MORE INFO HELP)
 
-The degree distribution shows how many nodes have a particular degree. The highest degree in this network is 775, the degree distribution is visualized below:
+The degree distribution shows how many nodes have a particular degree. The highest degree in this network is 775, but a cutoff point of 30 has been chosen for the plot because of the sparsity of degrees above this point(Very few nodes have more than 30 edges). The degree distribution is visualized below:
 
 <img src="/images/Degree.png"/>
 In the image, there can be seen some counts with 0 degrees. This proves that there are questions which hasn't been answered in the network. Other than that there are a lot of questions who have received few answers, and it decreases with the questions receiving answers. This is normally due to a potential right answer appears, so there would be no need to answer a question where someone else already answered something that seems right.
