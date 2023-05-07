@@ -26,7 +26,5 @@ $$
         \text{TF-IDF}(t,d) & \textbf{else}
 \end{cases}
 $$
-Where we let $\alpha = 3$, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$. It is also noted that TF and IDF is calculated community-wise, not document-wise, as we are interested in finding largest differences in communities.
-
-
+Where we let $\alpha = 3$, which is the equivalent to adding 2 more artifical term counts for every term in question titles. So $\alpha$ is only mulitipled for term occurences inside $Q_{title}$.
 
