@@ -7,4 +7,4 @@ The communities are detected using Louivain-method, and visualized with netwulf:
 To measure importance of terms, TF-IDF is used. The (non-normalized) Term Frequency is used,
 $$ \text{TF}(t,d) = f_{t,d} $$
 Where f_{t,d} is simply the term count in document. The Inverse Document Frequency is calculated as
-$$ \text{IDF}(t,D) = log(\frac{N}{1 + n_t}) + 1 $$</description></item></channel></rss>
+where $n_t = |{d \in D: t \in d}|$ is the number of documents $D$ where the term $t$ appears at least once.</description></item></channel></rss>
