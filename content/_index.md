@@ -11,7 +11,7 @@ The questions and answers are then stored on the website as valuable data.
 
 This makes the data on Stack Overflow very interesting to analyse social interactions & sub-communities on and there can be obtained insights into different kind of programming patterns.
 
-There will be looked into creating a directed graph network and it's sub-communities with the louvain method. Also looked into explorative analysis with such things as TF-IDF and Confusion matrix.
+There will be looked into creating a directed graph network and it's sub-communities with the louvain method. Also looked into explorative analysis with such things as TF-IDF and modularities.
 
 To see the code used in this project, it can be accessed through the Jupyter Notebook link below:
 ## [Explainer Notebook](explainer-notebook.html)
