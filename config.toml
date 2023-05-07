@@ -6,7 +6,7 @@ theme = "theme"
 [params]
     authors = ["Khalil Ahmadi(s204161)", "Michael Damholt(s204151)", "Mathias Dyhr(s204156)"]
     notebook = "/explainer-notebook.html"
-    data = "https://drive.google.com"
+    data = "https://drive.google.com/drive/folders/1RdU0mMRiBL9uTIWgPd8ZTfrs3qKUc8qB"
     github = "https://github.com/peterampazzo/project-website-template"
     [[params.nav]]
         label = "Data"

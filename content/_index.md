@@ -3,19 +3,22 @@ title: Stack Overflow Analysis
 layout: single
 next: data-description
 ---
-Stack Overflow is a helpful platform where experienced programmers, developers, experts and etc. come to share their knowledge to the less experienced users. These users are able to ask any questions related to programming and other people can answer these questions.
+
+Stack Overflow is a helpful platform where experienced programmers, developers, experts and others come to share their knowledge to less experienced users. These users are able to ask any questions related to programming and other anyone can answer these questions.
 The questions and answers are then stored on the website as valuable data. 
 
-This makes the data on Stack Overflow very interesting to analyse social interactions & subcommunities on and we might be able to obtain insights into different kind of programming patterns.
+<img src="/images/stack.jpg" width="600" />
 
+This makes the data on Stack Overflow very interesting to analyse social interactions & sub-communities on and there can be obtained insights into different kind of programming patterns.
 
+There will be looked into creating a directed graph network and it's sub-communities with the louvain method. Also looked into explorative analysis with such things as WordCloud and Confusion matrix.
 
+To see the code used in this project, it can be accessed through the Jupyter Notebook link below:
+## [Explainer Notebook](explainer-notebook.html)
 
+The dataset used can also be downloaded in the data section of this website.
 
-## Math formula
-
-
-$$ x^n + y^n = z^n $$
+(Har beholdt de her ting som eksempel, slettes til sidst:)
 
 ## Code chunk
 
@@ -24,21 +27,10 @@ import pandas as pd
 
 df = pd.DataFrame()
 ```
-Waddup homies
-Sed id orci ullamcorper, commodo sapien in, scelerisque nunc. Duis posuere sed nisl in gravida. Pellentesque rutrum justo ut mi tempus dignissim. Ut pulvinar quis urna ut molestie. Pellentesque nec arcu metus. Vivamus non rutrum magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-![](https://source.unsplash.com/random/?Copenhagen)
-
-Phasellus viverra tellus viverra purus placerat, et lacinia mauris tristique. Nam semper venenatis lorem, nec ullamcorper tortor dignissim eget. Etiam non ipsum sed neque pharetra ullamcorper. Praesent ultrices ipsum varius dictum lacinia. Nulla placerat magna augue, volutpat rutrum nulla finibus sed. Phasellus maximus mi sit amet risus mattis, porta rhoncus elit dictum. Donec vel viverra lectus, vitae elementum arcu. Quisque quis molestie elit. Cras eget tellus vitae risus fermentum bibendum vitae ac turpis. Praesent mi eros, scelerisque sit amet sem at, hendrerit accumsan ligula.
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec mauris aliquet, convallis ligula vel, mollis est. Fusce accumsan massa vel lectus dapibus, at vehicula elit auctor.
 
 | Column 1  | Column 2  |  Column 3 |
 |---|---|---|
 | 1 | 4 | 7 |
 | 2 | 5 | 8 |
 | 3 | 6 | 9 |
-
-## [Explainer Notebook](explainer-notebook.html)
-
-Aenean non augue vulputate, bibendum ligula ac, euismod arcu. Proin consequat, urna at lobortis sodales, ligula nulla molestie dolor, et interdum nulla arcu eu lacus. Aenean maximus mi vel augue blandit, quis vehicula libero egestas. In mollis nibh in turpis sodales, eget luctus sem pretium. Integer lobortis diam vel nisi laoreet, ut condimentum risus ultrices. Praesent diam risus, imperdiet at lorem in, hendrerit auctor ex.
